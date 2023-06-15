@@ -2,9 +2,9 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { AppProvider } from "./context/AppContext";
 import carlogo from "./images/carlogo.jpg";
-import genericcar from "./images/car.svg";
 import './App.css';
-import GasSelect from "./components/GasSelector";
+import CustomCarForm from './components/CustomCarForm';
+
 
 function App () {
   return (
@@ -18,24 +18,7 @@ function App () {
     </nav>
     <main className="container alert alert-danger">
       <div className="row">
-      <div className="col-sm">
-        <h2>Car A</h2>
-          <div className="col">
-          <img src={genericcar} width="300" height="300" class="d-inline-block align-top" alt=""></img>
-            </div>
-            <div className="col">
-             <GasSelect />
-            </div>
-            <div className="col">
-              mileagecomponent
-            </div>
-            <div className="col">
-              date component
-            </div>
-            <div className="col">
-              gas cost component
-            </div>
-      </div>
+        <CustomCarForm />
       <div className="col-sm alert alert-success">
       <img src="vs-image.png" alt="VS"></img>
       </div>
